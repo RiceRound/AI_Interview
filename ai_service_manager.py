@@ -14,7 +14,7 @@ class AIServiceManager:
             'Kimi': KimiManager(),
             'TencentAI': TencentAIManager(),
             'BaiduAI': BaiduAIManager(),
-            'ChatGPT': ChatGPTManager(),
+            # 'ChatGPT': ChatGPTManager(),
             # 后续可以添加其他AI服务
             # 'Claude': ClaudeManager(),
         }

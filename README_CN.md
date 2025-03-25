@@ -26,4 +26,55 @@ GitHub: [https://github.com/RiceRound/AI_Interview](https://github.com/RiceRound
 ## 贡献
 欢迎贡献！请随时提交 Pull Request。对于重大变更，请先创建 issue 讨论您想要改变的内容。
 
-请确保适当更新测试。 
+请确保适当更新测试。
+
+## 快速入门
+
+1. 克隆项目
+```bash
+git clone https://github.com/RiceRound/AI_Interview.git
+cd AI_Interview
+```
+
+2. 配置文件设置
+- 将 `config.yaml.example` 重命名为 `config.yaml`
+- 根据需要配置以下AI服务参数：
+
+### 百度智能云配置
+```yaml
+baidu:
+  app_key: "your-baidu-app-key"  # 在百度千帆平台获取的API Key
+  app_id: "your-baidu-app-id"    # 在百度千帆平台获取的App ID
+```
+
+### Kimi AI配置
+```yaml
+kimi:
+  api_key: "your-kimi-api-key"   # 在Moonshot平台获取的API Key
+```
+
+### 腾讯云配置
+```yaml
+tencent:
+  bot_app_key: "your-tencent-bot-app-key"     # 腾讯云Bot应用密钥
+  visitor_biz_id: "your-tencent-visitor-biz-id" # 访客业务ID
+  secret_id: "your-tencent-secret-id"         # 腾讯云SecretId
+  secret_key: "your-tencent-secret-key"       # 腾讯云SecretKey
+```
+
+### ChatGPT配置
+```yaml
+chatgpt:
+  api_key: "your-openai-api-key"  # OpenAI平台获取的API Key
+  base_url: "https://api.openai.com/v1"  # API基础URL，如果使用代理可以修改
+```
+
+3. 获取API密钥
+- 百度千帆平台：登录后在应用管理中创建应用，获取API Key和App ID
+- Kimi AI：在Moonshot平台的个人设置中获取API Key
+- 腾讯云：在访问管理控制台获取SecretId和SecretKey，在机器人平台获取Bot相关密钥
+- ChatGPT：在OpenAI平台的API设置页面获取API Key
+
+注意：
+- 请妥善保管您的API密钥，不要将其提交到代码仓库中
+- 对于ChatGPT，如果在中国大陆使用，可能需要配置代理或修改base_url 
