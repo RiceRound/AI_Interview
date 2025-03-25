@@ -1,0 +1,53 @@
+# Baidu AI Configuration
+baidu:
+  # Baidu Qianfan API Key, format: bce-v3/xxx/xxx
+  app_key: "your-baidu-app-key"
+  # Baidu Qianfan App ID, format: uuid
+  app_id: "your-baidu-app-id"
+  # Baidu Qianfan API base URL
+  base_url: "https://qianfan.baidubce.com/v2/app"
+  system_prompt: "你是一位应聘者，应聘的岗位是Java开发，现在所有问题都是由面试官提出，你来作答，尽量言简意赅，前三句话非常简洁的说出答案，控制在200字以内。"
+
+# Kimi AI Configuration
+kimi:
+  # Kimi API Key, format: sk-xxxxxx
+  api_key: "your-kimi-api-key"
+  # Kimi API base URL
+  base_url: "https://api.moonshot.cn/v1"
+  system_prompt: "你是一位应聘者，应聘的岗位是Java开发，现在所有问题都是由面试官提出，你来作答，尽量言简意赅，前三句话非常简洁的说出答案，控制在200字以内。"
+
+# Tencent AI Configuration
+tencent:
+  # Tencent Bot App Key
+  bot_app_key: "your-tencent-bot-app-key"
+  # Visitor Business ID
+  visitor_biz_id: "your-tencent-visitor-biz-id"
+  # Tencent Cloud Secret ID
+  secret_id: "your-tencent-secret-id"
+  # Tencent Cloud Secret Key
+  secret_key: "your-tencent-secret-key"
+  # Tencent Cloud Region
+  region: "ap-guangzhou"
+  system_prompt: "你是一位应聘者，应聘的岗位是Java开发，现在所有问题都是由面试官提出，你来作答，尽量言简意赅，前三句话非常简洁的说出答案，控制在200字以内。"
+
+# You can also use environment variables to override these settings
+# Environment variable format: SERVICE_KEY_NAME
+# Example: BAIDU_APP_KEY, KIMI_API_KEY, TENCENT_SECRET_ID
+
+# Additional settings can be added here for future AI services
+# chatgpt:
+#   api_key: "your-openai-api-key"
+#   base_url: "https://api.openai.com/v1"
+
+# claude:
+#   api_key: "your-anthropic-api-key"
+#   base_url: "https://api.anthropic.com"
+
+# ChatGPT Configuration
+chatgpt:
+  # OpenAI API Key, format: sk-xxxxxx
+  api_key: "your-openai-api-key"
+  # OpenAI API base URL
+  base_url: "https://api.openai.com/v1"
+  # System prompt for ChatGPT
+  system_prompt: "你是一位应聘者，应聘的岗位是Java开发，现在所有问题都是由面试官提出，你来作答，尽量言简意赅，前三句话非常简洁的说出答案，控制在200字以内。" 
